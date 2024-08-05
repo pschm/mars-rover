@@ -4,9 +4,17 @@ _Mars Rover technical Challenge_
 
 The problem below requires some kind of input. You are free to implement any mechanism for feeding input into your solution (for example, using hard coded data within a unit test). You should provide sufficient evidence that your solution is complete by, as a minimum, indicating that it works correctly against the supplied test data.
 
-We highly recommend using a unit testing framework such as JUnit or NUnit. Even if you have not used it before, it is simple to learn and incredibly useful.
+We highly recommend using a unit testing framework such as Kotest or JUnit. Even if you have not used it before, it is simple to learn and incredibly useful.
 
 The code you write should be of production quality, and most importantly, it should be code you are proud of.
+
+This repository can be a starting point.
+It is a simple gradle/kotlin project with kotest as the testing framework, configured and ready to get started.
+
+Feel free to use any kind of setup (programming language, IDE, frameworks) you want. The goal of this task is **NOT** to see a final solution but to see **how you approach the problem** and how you start solving it.
+
+Furthermore, you can start with the part you feel most comfortable with, if you are more comfortable writing tests first, start with that, if you are more comfortable writing the actual code first (by parsing data or defining data structure, ...), start with that.
+
 
 ### MARS ROVERS
 

@@ -1,5 +1,5 @@
 fun main() {
-    println("Welcome to the Kangaroo coding challenge")
+    println("Welcome to the Mars Rover coding challenge")
 
     throw NotImplementedError("do your magic")
 }

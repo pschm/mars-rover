@@ -1,8 +1,5 @@
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
-
 plugins {
-    kotlin("jvm") version "2.0.0"
+    kotlin("jvm") version "2.4.0"
     application
 }
 
@@ -13,10 +10,13 @@ repositories {
     mavenCentral()
 }
 
-val kotestVersion = "5.9.1"
+kotlin {
+    jvmToolchain(25)
+}
+
+val kotestVersion = "6.2.1"
 
 dependencies {
-    testImplementation("org.jetbrains.kotlin:kotlin-test:1.9.24")
     testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
     testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
     testImplementation("io.kotest:kotest-property:$kotestVersion")
@@ -24,12 +24,6 @@ dependencies {
 
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
-}
-
-tasks.withType<KotlinCompile> {
-    compilerOptions {
-        jvmTarget.set(JvmTarget.JVM_21)
-    }
 }
 
 application {
